@@ -56,3 +56,10 @@ Mã nguồn **do dự án này tự viết** theo MIT © 2026 Long Ngo. Các d�
 3. [BitNet b1.58, JMLR](https://jmlr.org/beta/papers/v26/24-2050.html).
 4. [CVNSS40_Tutor](https://github.com/xulytiengviet/CVNSS40_Tutor).
 5. [Espressif ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/).
+
+## Kích hoạt website trên GitHub Pages (một lần)
+Chủ repository cần vào **Settings → Pages → Build and deployment → Source → GitHub Actions → Save**.
+Sau đó vào **Actions → Deploy TinyLLM Vietnamese website → Run workflow**.
+Địa chỉ dự kiến: https://xulytiengviet.github.io/TinyLLM_Vietnamese/ .
+
+Nếu Pages chưa bật, `actions/configure-pages@v5` báo `Get Pages site failed`; đó là lỗi thiết lập Pages chưa tạo, không phải lỗi website. Workflow GitHub Actions mặc định **không thể tự bật Pages** bằng GITHUB_TOKEN. Xem `docs/ESP32.md` và `docs/REPRODUCE.md` để tái lập mã Python.
