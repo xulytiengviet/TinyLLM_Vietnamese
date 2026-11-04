@@ -8,7 +8,7 @@ python -m venv .venv
 # Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 python -m unittest discover -s tests -v
-python tools/base27.py CVNSS_BASE27
+python tools/base27.py CVNSS_TERNARY
 python tools/memory_budget.py --params 28900000 --bits 4 --flash-mib 4 --reserve-mib 1
 python training/prepare_data.py --input data/example.jsonl --output artifacts/prepared.jsonl
 python training/train.py --data artifacts/prepared.jsonl --field cvnss --steps 20 --context 16

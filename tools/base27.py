@@ -30,7 +30,7 @@ def decode(groups, alphabet=ALPHABET):
 
 if __name__ == "__main__":
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument("text", nargs="?", default="CVNSS_BASE27")
+    p.add_argument("text", nargs="?", default="CVNSS_TERNARY")
     p.add_argument("--alphabet", default=ALPHABET)
     a=p.parse_args()
     trits=encode(a.text,a.alphabet)
