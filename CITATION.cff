@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this research prototype and its upstream sources."
+title: "TinyLLM Vietnamese: CVNSS4.0, Base27 and Ternary for ESP32-S3"
+type: software
+authors:
+  - family-names: Ngo
+    given-names: Long
+repository-code: "https://github.com/xulytiengviet/TinyLLM_Vietnamese"
+license: MIT
+date-released: 2026-11-04

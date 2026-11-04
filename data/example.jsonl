@@ -1,0 +1,3 @@
+{"id":"ex1","cqn":"Tôi yêu tiếng Việt.","cvnss":"Toiy iwy tizb Vidf.","codec":"5.0.0-audit-safe","source_id":"example-one","license":"VERIFY_BEFORE_TRAIN","ambiguity":"unverified"}
+{"id":"ex2","cqn":"viết việt vỏ","cvnss":"vidb vidf voz","codec":"5.0.0-audit-safe","source_id":"example-two","license":"VERIFY_BEFORE_TRAIN","ambiguity":"unverified"}
+{"id":"ex3","cqn":"Tôi yêu tiếng Việt. Bản đồ địa lý thông minh.","cvnss":"Toiy iwy tizb Vidf. Banz dod diar lij thogy mihp.","codec":"5.0.0-audit-safe","source_id":"example-three","license":"VERIFY_BEFORE_TRAIN","ambiguity":"unverified"}
