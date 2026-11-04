@@ -1,0 +1,25 @@
+name: Verify Base27 and data pipeline
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Mathematical Base27 smoke
+        run: python tools/base27.py CVNSS_TERNARY
+      - name: Dataset preparation smoke
+        run: python training/prepare_data.py --input data/example.jsonl --output artifacts/prepared.jsonl
+      - name: Flash budget lower-bound
+        run: python tools/memory_budget.py --params 28900000 --bits 4 --flash-mib 4 --reserve-mib 1
